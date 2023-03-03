@@ -9,7 +9,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 export const Header = () => {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(true)
   const onclick = () => setIsActive(!isActive)
 
   return (
@@ -18,7 +18,7 @@ export const Header = () => {
       className='
       max-md:aria-checked:-left-64 max-md:aria-checked:bg-transparent 
 
-      fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-transparent text-white md:text-black opacity-90 z-50
+      fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-transparent text-zinc-100 opacity-90 z-50
 
       md:h-auto md:w-full md:px-3 md:flex-row md:items-center md:justify-between md:text-center '
     >
@@ -28,7 +28,7 @@ export const Header = () => {
           onClick={onclick}
         >
           {isActive ? (
-            <Bars3Icon className='w-6 text-black' />
+            <Bars3Icon className='w-6 text-black bg-zinc-100 rounded-sm' />
           ) : (
             <XMarkIcon className='w-8' />
           )}
@@ -50,12 +50,12 @@ export const Header = () => {
             <li>Professionals</li>
           </Link>
         </ul>
-        <div className=' flex gap-2 border-b md:border-black'>
+        <div className=' flex gap-2 md:border-b md:border-black'>
           <button onClick={() => console.log('search Value')}>
             <MagnifyingGlassIcon className='w-5' />
           </button>
           <input
-            className='w-2/3 md:w-40 lg:w-full px-2 py-1 rounded-md outline-none'
+            className='w-2/3 md:w-40 lg:w-full px-2 py-1 rounded-md outline-none md:bg-transparent'
             id='search'
             type='text'
             name='search'
@@ -74,9 +74,13 @@ export const Header = () => {
             <span className='md:hidden lg:block'>Account</span>
           </div>
         </Link>
-        <Link href={'/'}>
+        <Link
+          aria-checked={isActive}
+          className='max-md:aria-checked:block hidden md:block'
+          href={'/'}
+        >
           <div className='flex gap-2'>
-            <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2 text-black' />
+            <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2' />
             <span className='hidden lg:block'>Bag</span>
           </div>
         </Link>
