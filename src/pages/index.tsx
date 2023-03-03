@@ -4,7 +4,7 @@ import { HomePage } from './homePage'
 export default function Home() {
   return (
     <>
-      <Seo title='index' />
+      <Seo title='Project-Sale' />
       <HomePage />
     </>
   )
