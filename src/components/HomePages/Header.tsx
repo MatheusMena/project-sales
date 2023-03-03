@@ -2,22 +2,44 @@ import {
   UserIcon,
   ShoppingCartIcon,
   Bars3Icon,
-  MagnifyingGlassIcon
+  MagnifyingGlassIcon,
+  XMarkIcon
 } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Header = () => {
+  const [isActive, setIsActive] = useState(false)
+  const onclick = () => setIsActive(!isActive)
+
   return (
-    <header>
-      <div id='logo'>
-        <span>
-          <Bars3Icon />
+    <header
+      aria-checked={isActive}
+      className='
+      max-md:aria-checked:-left-64 max-md:aria-checked:bg-transparent 
+
+      fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-transparent text-white md:text-black opacity-90 z-50
+
+      md:h-auto md:w-full md:px-3 md:flex-row md:items-center md:justify-between md:text-center '
+    >
+      <div className='px-2 flex gap-5 justify-end' id='logo'>
+        <span
+          className='absolute z-10 cursor-pointer md:hidden'
+          onClick={onclick}
+        >
+          {isActive ? (
+            <Bars3Icon className='w-6 text-black' />
+          ) : (
+            <XMarkIcon className='w-8' />
+          )}
         </span>
-        <span>Logo</span>
+        <span className='hidden md:block'>Logo</span>
       </div>
-      <div id='nav'>
-        <ul>
+      <div
+        className='flex gap-10 flex-col-reverse md:gap-5 md:items-center md:flex-row'
+        id='nav'
+      >
+        <ul className='flex gap-5 md:flex-row flex-col'>
           <Link href={'/'}>
             <li>Home</li>
           </Link>
@@ -28,32 +50,34 @@ export const Header = () => {
             <li>Professionals</li>
           </Link>
         </ul>
-      </div>
-      <div id='access'>
-        <div>
+        <div className=' flex gap-2 border-b md:border-black'>
           <button onClick={() => console.log('search Value')}>
-            <MagnifyingGlassIcon />
+            <MagnifyingGlassIcon className='w-5' />
           </button>
           <input
+            className='w-2/3 md:w-40 lg:w-full px-2 py-1 rounded-md outline-none'
+            id='search'
             type='text'
             name='search'
-            id='search'
             placeholder='search..'
             onChange={searchValue => {
               searchValue.target.value
             }}
           />
         </div>
+      </div>
+
+      <div className='flex gap-2 h-screen md:h-full items-end' id='access'>
         <Link href={'/'}>
-          <div>
-            <UserIcon />
-            <span>Account</span>
+          <div className='flex gap-2'>
+            <UserIcon className='w-6' />
+            <span className='md:hidden lg:block'>Account</span>
           </div>
         </Link>
         <Link href={'/'}>
-          <div>
-            <ShoppingCartIcon />
-            <span>Bag</span>
+          <div className='flex gap-2'>
+            <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2 text-black' />
+            <span className='hidden lg:block'>Bag</span>
           </div>
         </Link>
       </div>
