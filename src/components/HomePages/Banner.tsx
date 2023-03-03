@@ -6,18 +6,10 @@ export const Banner = () => {
           muted
           autoPlay
           loop
-          src='/production ID_4709297.mp4'
-          className='w-full h-screen object-cover brightness-50 saturate-50 '
+          src='/clipMoveforBanner.mp4'
+          className='w-full  bg-cover object-cover brightness-50 saturate-50 '
         />
 
-        <div>
-          <span>Projects</span>
-
-          {/* 
-                Para desing..
-              <span>Projects</span> 
-          */}
-        </div>
         <div>
           <h2>Project - Sale</h2>
           <p>
