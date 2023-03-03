@@ -1,7 +1,9 @@
+import { Header } from '@/components/HomePages/Header'
 import { Banner } from '../components/HomePages/Banner'
-export const HomePage = () => {
+export default function HomePage () {
   return (
     <>
+     <Header /> 
       <Banner />
     </>
   )
