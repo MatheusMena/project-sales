@@ -18,7 +18,7 @@ export const Header = () => {
       className='
       max-md:aria-checked:-left-64 max-md:aria-checked:bg-transparent 
 
-      fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-transparent text-zinc-100 opacity-90 z-50
+      fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-zinc-700 md:bg-opacity-50 text-zinc-100 opacity-90 z-50
 
       md:h-auto md:w-full md:px-3 md:flex-row md:items-center md:justify-between md:text-center '
     >
