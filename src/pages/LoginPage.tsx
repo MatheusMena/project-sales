@@ -16,10 +16,10 @@ export default function LoginPage() {
             src={
               'https://images.pexels.com/photos/5926395/pexels-photo-5926395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             }
-            className='h-screen lg:h-[80vh] md:w-screen bg-cover object-cover rounded-tl-md rounded-bl-md relative z-0 sm:block hidden shadow-2xl'
+            className='h-screen lg:h-[80vh] md:w-screen bg-cover object-cover rounded-l-lg relative z-0 sm:block hidden shadow-2xl'
           />
         </div>
-        <div className='bg-slate-100 lg:static absolute z-10 rounded-md shadow-2xl flex flex-col items-center justify-center w-screen h-screen sm:w-1/2 sm:h-[50%] sm:py-10 lg:h-[80vh] lg:px-20 '>
+        <div className='bg-slate-100 lg:static absolute z-10 rounded-r-lg shadow-2xl flex flex-col items-center justify-center w-screen h-screen sm:w-1/2 sm:h-[50%] sm:py-10 lg:h-[80vh] lg:px-20 '>
           <h1 className='py-10 text-5xl font-sans'>Login</h1>
           <div className='bg-slate-300 rounded-md  p-3 my-1 flex items-center'>
             <EnvelopeIcon className='w-6 text-cyan-900 mr-1 pr-1 border-r border-slate-100' />
