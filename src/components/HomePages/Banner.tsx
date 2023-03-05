@@ -1,4 +1,3 @@
-import { FullScroll } from './FullScroll'
 export const Banner = () => {
   return (
     <>
@@ -13,9 +12,6 @@ export const Banner = () => {
         <h3 className='absolute inset-x-0 inset-y-1/3 text-7xl text-white '>
           Project - Sale
         </h3>
-        <div className=''>
-          <FullScroll />
-        </div>
       </section>
     </>
   )
