@@ -1,7 +1,8 @@
+import { FullScroll } from './FullScroll'
 export const Banner = () => {
   return (
     <>
-      <section id='Banner'>
+      <section id='Banner' className='text-center'>
         <video
           muted
           autoPlay
@@ -9,15 +10,11 @@ export const Banner = () => {
           src='/clipMoveforBanner.mp4'
           className='w-full h-[85vh] lg:h-[80vh] bg-cover object-cover brightness-50 saturate-50'
         />
-
-        <div>
-          <h2>Project - Sale</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempore
-            ipsum doloremque voluptas sint nemo praesentium exercitationem.
-            Eveniet recusandae, repellat esse eos quae impedit vel, est ea fuga
-            reprehenderit tempore.
-          </p>
+        <h3 className='absolute inset-x-0 inset-y-1/3 text-7xl text-white '>
+          Project - Sale
+        </h3>
+        <div className=''>
+          <FullScroll />
         </div>
       </section>
     </>
