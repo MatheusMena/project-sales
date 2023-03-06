@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        arsenic: '#38404B',
+        'slate-blue': '#9488EF',
+        'neon-blue': '#121063',
+        Steel: '#565584',
+        'midnght-express': '#1A202C'
+        // 'silver': '#ecebff',
+        // 'bubble-gum': '#ff77e9',
+        // 'bermuda': '#78dcca',
+      },
       keyframes: {
         scrollXFullToRight: {
           '0%': { transform: 'translateX(0)' },
@@ -19,8 +29,9 @@ module.exports = {
         }
       },
       animation: {
-        scrollXR: 'scrollXFullToRight 120s linear infinite',
-        scrollXL: 'scrollXFullToLeft 120s linear infinite'
+        scrollXR100: 'scrollXFullToRight 100s linear infinite',
+        scrollXL120: 'scrollXFullToLeft 120s linear infinite',
+        scrollXR50: 'scrollXFullToRight 50s linear infinite'
       }
     },
     plugins: []

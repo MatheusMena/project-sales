@@ -24,86 +24,88 @@ export const FullScroll = () => {
 
   return (
     <>
-      <section
-        id='slider1'
-        // flex flex-wrap justify-center
-        className=' w-[75vw] h-auto m-auto overflow-hidden'
-      >
-        <div
-          id='slide-track'
-          // animation 40s linear infinite
-          className='flex animate-scrollXR'
+      <article id='scrollfull' className='flex flex-col gap-2'>
+        <section
+          id='slider1'
+          // flex flex-wrap justify-center
+          className='w-full h-auto m-auto overflow-hidden'
         >
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+          <div
+            id='slide-track'
+            // animation 40s linear infinite
+            className='flex animate-scrollXR100'
+          >
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm hover:p-1'>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+            ))}
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      <section
-        id='slider1'
-        // flex flex-wrap justify-center
-        className=' w-[75vw] h-auto m-auto overflow-hidden'
-      >
-        <div
-          id='slide-track'
-          // animation 40s linear infinite
-          className='flex animate-scrollXL'
+        <section
+          id='slider1'
+          // flex flex-wrap justify-center
+          className=' w-full h-auto m-auto overflow-hidden'
         >
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+          <div
+            id='slide-track'
+            // animation 40s linear infinite
+            className='flex animate-scrollXL120'
+          >
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+            ))}
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      <section
-        id='slider1'
-        // flex flex-wrap justify-center
-        className=' w-[75vw] h-auto m-auto overflow-hidden'
-      >
-        <div
-          id='slide-track'
-          // animation 40s linear infinite
-          className='flex animate-scrollXR'
+        <section
+          id='slider1'
+          // flex flex-wrap justify-center
+          className=' w-full h-auto m-auto overflow-hidden'
         >
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+          <div
+            id='slide-track'
+            // animation 40s linear infinite
+            className='flex animate-scrollXR50 '
+          >
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-          {Tags.map(tags => (
-            <div id='slide' className='w-[calc(100px * 20)]'>
-              <div className='w-[100px] bg-slate-700 text-white text-center m-1 rounded-sm '>
-                # {tags}
+            ))}
+            {Tags.map(tags => (
+              <div id='slide' className='w-[calc(100px * 20)]'>
+                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                  # {tags}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      </article>
     </>
   )
 }
