@@ -22,7 +22,7 @@ export const Header = () => {
 
       md:h-auto md:w-full md:px-3 md:flex-row md:items-center md:justify-between md:text-center '
     >
-      <div className='px-2 flex gap-5 justify-end' id='logo'>
+      <div className='flex  justify-end' id='logo'>
         <span
           className='absolute z-10 cursor-pointer md:hidden'
           onClick={onclick}
