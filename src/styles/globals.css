@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+#Banner > video {
+  -webkit-mask-image: linear-gradient(to bottom, #000000, transparent 97%);
+  mask-image: linear-gradient(to bottom, #000000, transparent 97%);
+}

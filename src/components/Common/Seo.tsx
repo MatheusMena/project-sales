@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ISeo } from '../Types/iSeo'
+import { ISeo } from '../../Types/iSeo'
 
 export const Seo = ({ title, description }: ISeo) => {
   return (

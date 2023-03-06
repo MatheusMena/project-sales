@@ -1,11 +1,16 @@
-import { Header } from '@/components/HomePages/Header'
 import { Banner } from '../components/HomePages/Banner'
+import { FullScroll } from '../components/HomePages/FullScroll'
 export const HomePage = () => {
   return (
-    <>
-      <Header />
+    <main className='bg-midnght-express h-screen'>
       <Banner />
-    </>
+      <div
+        id='CenteringFullScroll'
+        className='lg:my-[2vh] md:my-[1vh] my-[0vh]'
+      >
+        <FullScroll />
+      </div>
+    </main>
   )
 }
 

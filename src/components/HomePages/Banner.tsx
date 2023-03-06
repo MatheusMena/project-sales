@@ -1,4 +1,3 @@
-import { FullScroll } from './FullScroll'
 export const Banner = () => {
   return (
     <>
@@ -8,14 +7,11 @@ export const Banner = () => {
           autoPlay
           loop
           src='/clipMoveforBanner.mp4'
-          className='w-full h-[85vh] lg:h-[80vh] bg-cover object-cover brightness-50 saturate-50'
+          className='w-full h-[85vh] lg:h-[80vh] z-0 bg-cover object-cover brightness-50 saturate-50'
         />
-        <h3 className='absolute inset-x-0 inset-y-1/3 text-7xl text-white '>
+        <h3 className='absolute z-20 inset-x-0 inset-y-1/3 text-7xl text-white '>
           Project - Sale
         </h3>
-        <div className=''>
-          <FullScroll />
-        </div>
       </section>
     </>
   )
