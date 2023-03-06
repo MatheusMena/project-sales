@@ -16,7 +16,7 @@ export const Header = () => {
     <header
       aria-checked={isActive}
       className='
-      max-md:aria-checked:-left-64 max-md:aria-checked:bg-transparent 
+      max-md:aria-checked:-left-60 max-md:aria-checked:bg-transparent 
 
       fixed h-screen left-0 transition-all overflow-hidden p-2 flex flex-col bg-zinc-900 md:bg-zinc-700 md:bg-opacity-50 text-zinc-100 opacity-90 z-50
 
