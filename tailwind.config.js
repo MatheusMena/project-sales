@@ -13,10 +13,10 @@ module.exports = {
         'slate-blue': '#9488EF',
         'neon-blue': '#121063',
         Steel: '#565584',
-        'midnght-express': '#1A202C'
-        // 'silver': '#ecebff',
-        // 'bubble-gum': '#ff77e9',
-        // 'bermuda': '#78dcca',
+        'midnght-express': '#1A202C',
+        'medium-spring-green': '#38F68E',
+        'outrageous-orage': '#F25A3A',
+        'havelock-blue': '#4D71C7'
       },
       keyframes: {
         scrollXFullToRight: {
