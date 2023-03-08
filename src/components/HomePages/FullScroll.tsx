@@ -37,14 +37,14 @@ export const FullScroll = () => {
           >
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm hover:p-1'>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm hover:p-1'>
                   # {tags}
                 </div>
               </div>
             ))}
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm '>
                   # {tags}
                 </div>
               </div>
@@ -64,14 +64,14 @@ export const FullScroll = () => {
           >
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm '>
                   # {tags}
                 </div>
               </div>
             ))}
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm '>
                   # {tags}
                 </div>
               </div>
@@ -91,14 +91,14 @@ export const FullScroll = () => {
           >
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm '>
                   # {tags}
                 </div>
               </div>
             ))}
             {Tags.map(tags => (
               <div id='slide' className='w-[calc(100px * 20)]'>
-                <div className='w-[100px] bg-slate-blue text-white text-center m-1 rounded-sm '>
+                <div className='w-[100px] bg-kimono text-snow text-center m-1 rounded-sm '>
                   # {tags}
                 </div>
               </div>

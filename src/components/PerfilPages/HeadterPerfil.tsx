@@ -2,14 +2,15 @@ import { TrophyIcon, HeartIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 export const HeaderPerfil = () => {
   return (
-    <section className='text-white text-sm flex flex-col'>
+    <section className='text-snow text-sm flex flex-col'>
       <div
+        id='bgImgPerfil'
         className='
         md:h-[25vh]
 
         sm:w-screen sm:h-[20vh] sm:m-auto sm:rotate-0
 
-      w-[65vw] h-[65vw]  -z-10 m-auto -mt-[32.5%] rotate-45 bg-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500'
+        w-screen h-[20vh] -z-10 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500'
       ></div>
       <section className='md:max-w-7xl md:m-auto'>
         <div>
@@ -17,7 +18,7 @@ export const HeaderPerfil = () => {
             className='
             md:rounded-xl md:mx-5 
 
-            sm:-mt-[50px]
+            -mt-[50px]
 
             object-cover m-auto rounded-full'
             src={'https://github.com/MatheusMena.png'}
@@ -45,7 +46,7 @@ export const HeaderPerfil = () => {
             <h3 className='text-base'>Full-Stack</h3>
           </span>
 
-          <p className='md:border-b md:border-Steel md:text-left md:5 md:pb-5 mb-2 mx-2.5 text-center '>
+          <p className='md:border-b md:border-snow md:text-left md:5 md:pb-5 mb-2 px-5 text-center '>
             Desenvolvedor Front-End && Estudante de Desenvolvimento Web
             Fullstack na @tryber
           </p>
@@ -64,7 +65,7 @@ export const HeaderPerfil = () => {
 
             sm:w-1/2
 
-            w-full h-[30px] flex justify-center items-center gap-2 mx-2 bg-Steel text-white bg-opacity-80 rounded-lg '
+            w-full h-[30px] flex justify-center items-center gap-2 mx-2 bg-orbe text-snow bg-opacity-80 rounded-lg '
           >
             Seguir
             <HeartIcon className='w-5' />
@@ -75,7 +76,7 @@ export const HeaderPerfil = () => {
 
             sm:w:1/3
 
-            w-full  h-[30px] flex justify-center items-center gap-2 mx-2 bg-outrageous-orage text-midnght-express bg-opacity-90 rounded-lg '
+            w-full  h-[30px] flex justify-center items-center gap-2 mx-2 bg-kimono text-snow bg-opacity-90 rounded-lg '
           >
             Comtratar
             <TrophyIcon className='w-5' />

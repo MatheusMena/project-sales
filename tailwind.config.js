@@ -9,14 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        arsenic: '#38404B',
-        'slate-blue': '#9488EF',
-        'neon-blue': '#121063',
-        Steel: '#565584',
         'midnght-express': '#1A202C',
-        'medium-spring-green': '#38F68E',
-        'outrageous-orage': '#F25A3A',
-        'havelock-blue': '#4D71C7'
+
+        // Gotham
+        snow: '#EBECEE',
+        spririt: '#C37EFD',
+        kimono: '#6e5dcd',
+        orbe: '#233B67'
       },
       keyframes: {
         scrollXFullToRight: {
