@@ -21,7 +21,8 @@
   background-color: #000;
 }
 
-#Banner > video {
+#Banner > video,
+#bgImgPerfil {
   -webkit-mask-image: linear-gradient(to bottom, #000000, transparent 97%);
   mask-image: linear-gradient(to bottom, #000000, transparent 97%);
 }
