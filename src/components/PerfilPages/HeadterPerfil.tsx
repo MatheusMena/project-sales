@@ -46,8 +46,8 @@ export const HeaderPerfil = () => {
             <h3 className='text-base'>Full-Stack</h3>
           </span>
 
-          <p className='md:border-b md:border-snow md:text-left md:5 md:pb-5 mb-2 px-5 text-center '>
-            Desenvolvedor Front-End && Estudante de Desenvolvimento Web
+          <p className='md:border-b md:border-snow md:text-left md:5 md:pb-5 mb-2 px-5 text-center md:border-opacity-50 '>
+            o Desenvolvedor Front-End && Estudante de Desenvolvimento Web
             Fullstack na @tryber
           </p>
         </div>
@@ -76,7 +76,7 @@ export const HeaderPerfil = () => {
 
             sm:w:1/3
 
-            w-full  h-[30px] flex justify-center items-center gap-2 mx-2 bg-kimono text-snow bg-opacity-90 rounded-lg '
+            w-full  h-[30px] flex justify-center items-center gap-2 mx-2 bg-spririt text-snow bg-opacity-90 rounded-lg '
           >
             Comtratar
             <TrophyIcon className='w-5' />
