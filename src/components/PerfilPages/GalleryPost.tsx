@@ -20,8 +20,8 @@ export const GalleryPost = () => {
   }
   return (
     <main
-      className='text-snow mt-5 max-w-6xl m-auto x
-    md:relative md:top-28'
+      className='text-snow mt-5
+    md:relative md:top-28 overflow-hidden'
     >
       <section
         className='
@@ -51,7 +51,7 @@ export const GalleryPost = () => {
       </section>
       <section
         className='
-        flex flex-row w-[200vw] transition-all '
+        flex flex-row w-[200vw]  '
       >
         <article
           aria-checked={isActiveProject}
@@ -59,7 +59,7 @@ export const GalleryPost = () => {
         aria-checked:left-0
         transition-all duration-1000
         relative -left-[50%]
-        bg-red-900 w-full flex justify-end px-20'
+        bg-red-900 w-full flex justify-end lg:px-[10%] md:px-5'
         >
           <CardPost />
         </article>
@@ -69,9 +69,9 @@ export const GalleryPost = () => {
           aria-checked:-left-[50%] 
           transition-all duration-1000
           relative left-0
-          bg-blue-900 w-full flex justify-end px-20'
+          bg-blue-900 w-full flex justify-end lg:px-[10%] md:px-5'
         >
-          ada
+          <CardPost />
         </article>
       </section>
     </main>
