@@ -3,6 +3,7 @@ import {
   UserGroupIcon
 } from '@heroicons/react/24/outline'
 import { useState } from 'react'
+import { CardPost } from '../Common/cardPost'
 
 export const GalleryPost = () => {
   const [isActiveProject, setIsActiveProject] = useState(true)
@@ -34,7 +35,7 @@ export const GalleryPost = () => {
           <CodeBracketSquareIcon
             aria-checked={isActiveProject}
             onClick={acttiveProject}
-            className='aria-checked:w-10 w-8 transition-all duration-500'
+            className='aria-checked:w-10 w-6 transition-all duration-500'
           />
         </div>
         <div
@@ -44,7 +45,7 @@ export const GalleryPost = () => {
           <UserGroupIcon
             aria-checked={isActiveProjectGroup}
             onClick={acttiveProjectGroup}
-            className='aria-checked:w-10 w-8 transition-all duration-500'
+            className='aria-checked:w-10 w-6 transition-all duration-500'
           />
         </div>
       </section>
@@ -60,7 +61,7 @@ export const GalleryPost = () => {
         relative -left-[50%]
         bg-red-900 w-full flex justify-end px-20'
         >
-          asdas
+          <CardPost />
         </article>
         <article
           aria-checked={isActiveProjectGroup}
