@@ -5,17 +5,40 @@ import {
 
 export const GalleryPost = () => {
   return (
-    <main className='h-screen text-snow mt-5 md:relative md:top-28'>
-      <section className='flex justify-evenly'>
-        <div className='w-full flex justify-center items-center'>
-          <CodeBracketSquareIcon className='md:w-10 w-8' />
+    <main
+      className='h-screen text-snow mt-5 max-w-6xl m-auto x
+    md:relative md:top-28 
+    lg;flex lg:w-10'
+    >
+      <section
+        className='
+      flex justify-evenly
+      
+      
+      lg:justify-start lg:flex-col'
+      >
+        <div
+          className='
+        
+        w-full flex justify-center items-center
+        
+        lg:w-auto lg:block
+        '
+        >
+          <CodeBracketSquareIcon className='w-8' />
         </div>
-        <div className='w-full flex justify-center items-center'>
-          <UserGroupIcon className='md:w-10 w-8' />
+        <div
+          className='
+        w-full flex justify-center items-center
+        
+        lg:w-auto lg:block
+        '
+        >
+          <UserGroupIcon className=' w-8' />
         </div>
       </section>
-      <article></article>
-      <article></article>
+      <article>asdas</article>
+      <article>ada</article>
     </main>
   )
 }
