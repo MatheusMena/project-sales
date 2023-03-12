@@ -1,5 +1,6 @@
 import { EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function LoginPage() {
@@ -38,9 +39,9 @@ export default function LoginPage() {
             />
           </div>
           <div className='flex justify-center my-10'>
-            <button className='bg-green-500 m-1 p-2 rounded-lg hover:bg-green-600'>
+            <Link href="/register" className='bg-green-500 m-1 p-2 rounded-lg hover:bg-green-600'>
               Criar Conta
-            </button>
+            </Link>
             <button
               className='bg-indigo-500 m-1 p-2 rounded-lg hover:bg-indigo-600'
               onClick={() => router.push('/homePage')}
