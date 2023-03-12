@@ -15,6 +15,11 @@ try {
     throw new Error("token inválido")
 }
 }
+
+export function tokenVerify(token){
+tokenReader(token)
+}
+
 export function register(body){
 const user = users.find((item) => item.email === body.email)
 if(user) {
