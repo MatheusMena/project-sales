@@ -8,7 +8,7 @@ export const CardPost = ({
   grup
 }: IProjectPost) => {
   return (
-    <div className='w-auto md:w-60  flex flex-col overflow-hidden'>
+    <div className='w-auto md:w-60  flex flex-col overflow-hidden relative'>
       <div>
         <Image
           className='w-full h-96 bg-cover object-cover'
@@ -19,7 +19,7 @@ export const CardPost = ({
           unoptimized
         />
       </div>
-      <div className='relative -top-96'>
+      <div className='absolute top-0'>
         <div className='w-60 flex flex-col gap-2  bg-gradient-to-t from-gray-900 via-gray-700  '>
           <h3>{name_project}</h3>
           <ul className='flex overflow-hidden gap-2.5'>
