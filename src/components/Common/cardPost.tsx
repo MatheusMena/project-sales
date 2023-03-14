@@ -37,15 +37,14 @@ export const CardPost = () => {
         />
       </div>
       <div
-        aria-checked={isActiveInfo}
         className='
-        aria-checked:-top-full 
-        aria-checked:duration-700
+        max-md:aria-checked:-top-full 
+        max-md:aria-checked:duration-700
 
        h-full flex flex-col md:justify-end justify-center items-center gap-3  m-auto relative -top-[38%] md:hover:-top-full transition-all duration-500 md:hover:duration-700 px-5 bg-gradient-to-t from-gray-900 via-gray-700  '
       >
-        <div className='w-60 flex flex-col gap-2'>
-          <h3 className='text-xl font-medium text-orbe bg-white py-1 pl-2 rounded-bl-xl rounded-tl-sm'>
+        <div aria-checked={isActiveInfo} className='w-60 flex flex-col gap-2'>
+          <h3 className='text-xl font-medium text-orbe bg-white py-1 pl-2 w-screen rounded-bl-xl rounded-tl-sm'>
             página de clima
           </h3>
           <ul className='flex overflow-hidden gap-2.5'>
@@ -55,7 +54,7 @@ export const CardPost = () => {
           </ul>
           <span className='flex gap-5'>
             <button className=' font-medium p-1 border-2 border-spririt rounded-md hover:bg-spririt active:bg-kimono active:text-spririt active:border-transparent transition-all duration-75'>
-              Espiar
+              salvar
             </button>
             <button className=' font-medium p-1 border-2 border-spririt rounded-md hover:bg-spririt active:bg-kimono active:text-spririt active:border-transparent transition-all duration-75'>
               Adquirir
