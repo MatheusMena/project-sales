@@ -27,26 +27,28 @@ export const GalleryPost = () => {
         className='
       flex justify-evenly'
       >
-        <div
-          className='
+        <div className='max-w-6xl w-full flex flex-row justify-evenly'>
+          <div
+            className='
         
         w-full h-20 flex justify-center items-center'
-        >
-          <CodeBracketSquareIcon
-            aria-checked={isActiveProject}
-            onClick={acttiveProject}
-            className='aria-checked:w-10 w-6 transition-all duration-500'
-          />
-        </div>
-        <div
-          className='
-        w-full flex justify-center items-center'
-        >
-          <UserGroupIcon
-            aria-checked={isActiveProjectGroup}
-            onClick={acttiveProjectGroup}
-            className='aria-checked:w-10 w-6 transition-all duration-500'
-          />
+          >
+            <CodeBracketSquareIcon
+              aria-checked={isActiveProject}
+              onClick={acttiveProject}
+              className='aria-checked:w-10 w-6 transition-all duration-500'
+            />
+          </div>
+          <div
+            className='
+        w-full h-20 flex justify-center items-center'
+          >
+            <UserGroupIcon
+              aria-checked={isActiveProjectGroup}
+              onClick={acttiveProjectGroup}
+              className='aria-checked:w-10 w-6 transition-all duration-500'
+            />
+          </div>
         </div>
       </section>
       <section
@@ -59,7 +61,7 @@ export const GalleryPost = () => {
         aria-checked:left-0
         transition-all duration-1000
         relative -left-[50%]
-        bg-red-900 w-full flex justify-end lg:px-[10%] md:px-5'
+        bg-transparent w-full flex justify-end lg:px-[10%] md:px-5'
         >
           <CardPost />
         </article>
@@ -69,7 +71,7 @@ export const GalleryPost = () => {
           aria-checked:-left-[50%] 
           transition-all duration-1000
           relative left-0
-          bg-blue-900 w-full flex justify-end lg:px-[10%] md:px-5'
+          bg-transparent w-full flex justify-end lg:px-[10%] md:px-5'
         >
           <CardPost />
         </article>
