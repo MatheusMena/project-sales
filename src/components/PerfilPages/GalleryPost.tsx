@@ -3,7 +3,7 @@ import {
   UserGroupIcon
 } from '@heroicons/react/24/outline'
 import { useState } from 'react'
-import { CardPost } from '../Common/cardPost'
+import { CardPost } from '../Common/CardPost'
 
 export const GalleryPost = () => {
   const [isActiveProject, setIsActiveProject] = useState(true)
