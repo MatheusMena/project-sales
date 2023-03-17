@@ -17,7 +17,7 @@ export const CardPost = ({
   return (
     <div
       onClick={acttiveProject}
-      className='w-auto md:w-60  h-80 md:m-10 m-5 flex rounded-lg flex-col overflow-hidden'
+      className='w-auto md:w-60  h-80 md:m-10 m-5 flex rounded-lg flex-col overflow-hidden text-snow'
     >
       <div>
         <Image
