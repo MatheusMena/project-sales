@@ -2,23 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: black transparent;
-}
+@media (min-width: 640px) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+  }
 
-*::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-}
+  *::-webkit-scrollbar {
+    width: 3px;
+    height: 4px;
+  }
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-  padding: 2px;
-}
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+    margin: 7px;
+  }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #000;
+  *::-webkit-scrollbar-thumb {
+    background-color: #00000092;
+    border: 0px solid transparent;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border: 0px solid transparent;
+  }
 }
 
 #Banner > video,
