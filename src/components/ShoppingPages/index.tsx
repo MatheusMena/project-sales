@@ -1,4 +1,5 @@
 import { CardPost } from '../Common/cardPost'
+import { Filtro } from './filtro'
 export const Shopping = () => {
   const Grup = [
     { url_img: 'https://github.com/levxyca.png' },
@@ -16,8 +17,9 @@ export const Shopping = () => {
 
   return (
     <article>
-      <div></div>
-      <section className='w-auto h-full m-auto flex flex-row justify-end gap-3 mx-3 flex-wrap'>
+      <Filtro />
+
+      <section className='w-auto h-full m-auto flex flex-row justify-evenly gap-3 mx-3 flex-wrap'>
         <CardPost
           name_project='página de clima'
           description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
