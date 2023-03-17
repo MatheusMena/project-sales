@@ -32,7 +32,7 @@ export const CardPost = ({
       <div
         aria-checked={isActiveInfo}
         className='
-        aria-checked:-top-full 
+        max-w-md:aria-checked:-top-full 
         aria-checked:duration-700
        h-full flex flex-col md:justify-end justify-center items-center gap-3  m-auto relative -top-[38%] md:hover:-top-full transition-all duration-500 md:hover:duration-700 px-5 bg-gradient-to-t from-gray-900 via-gray-700  '
       >
