@@ -1,4 +1,4 @@
-import { CardPost } from '../Common/cardPost'
+import { CardPost } from '../Common/CardPost'
 import { Filtro } from './filtro'
 export const Shopping = () => {
   const Grup = [
