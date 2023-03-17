@@ -1,3 +1,4 @@
+import { IProjectPost } from '@/Types/IProjectPost'
 import Image from 'next/image'
 import { useState } from 'react'
 export const CardPost = ({
@@ -7,7 +8,7 @@ export const CardPost = ({
   description,
   grup
 }: IProjectPost) => {
-  const [isActiveInfo, setIsActiveInfo] = useState(true)
+  const [isActiveInfo, setIsActiveInfo] = useState(false)
 
   const acttiveProject = () => {
     setIsActiveInfo(!isActiveInfo)
