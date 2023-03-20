@@ -1,46 +1,33 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  relationMode      = "prisma"
 }
 
 model user {
-  id          String  @id @unique @default(uuid())
-  name        String
-  nikeName    String?
-  description String?
-  email       String  @unique
-  post        post?   @relation(fields: [postId], references: [id])
-  postId      String?
-  team        team?   @relation(fields: [teamId], references: [id])
-  teamId      String?
+  id       String  @id @unique @default(uuid())
+  name     String  @db.VarChar(255)
+  nikeName String? @db.VarChar(255)
+  email    String  @unique @db.VarChar(255)
+  postId   String? @db.VarChar(255)
+  post     post?   @relation(fields: [postId], references: [id])
 
-  @@map("Users")
-}
-
-model team {
-  id        String  @id @default(uuid())
-  name_team String
-  user      user[]
-  post      post?   @relation(fields: [postId], references: [id])
-  postId    String?
+  @@index([postId])
 }
 
 model post {
   id          String   @id @default(uuid())
-  title       String
-  description String?
-  url_img     String?
+  title       String   @db.VarChar(255)
+  description String?  @db.VarChar(255)
+  url_img     String   @db.VarChar(255)
   post        Boolean  @default(false)
-  grup        team[]
+  grup        String   @db.VarChar(255)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   user        user[]
-
-  @@map("Posts")
 }
