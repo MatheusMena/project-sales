@@ -6,10 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
-  "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "lint": "next lint",
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.16",

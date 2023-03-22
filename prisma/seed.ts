@@ -1,7 +1,9 @@
+// import prisma from './prisma'
 import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
-async function main() {
 
+const prisma = new PrismaClient()
+
+async function main() {
   await prisma.user.deleteMany()
   await prisma.post.deleteMany()
   await prisma.grup.deleteMany()
@@ -31,7 +33,15 @@ async function main() {
       post: {
         create: {
           title: 'project sale',
-          grup: 
+          grup: {
+            create: {
+              integrat: {
+                connect: {
+                  github_url: 'https://github.com/IsaacGSS'
+                }
+              }
+            }
+          }
         }
       }
     }

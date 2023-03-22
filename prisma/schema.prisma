@@ -16,7 +16,7 @@ model user {
   postId     String?
   grupId     String?
   post       post?   @relation(fields: [postId], references: [id])
-  grup       grup?   @relation(fields: [grupId], references: [id])
+  grup       grup[]  @relation
 
   @@index([postId])
   @@index([grupId])
@@ -24,9 +24,10 @@ model user {
 
 model grup {
   id       String  @id @default(uuid())
-  Integral user[]  @relation
   post     post?   @relation(fields: [postId], references: [id])
   postId   String?
+  integrat user?   @relation(fields: [userId], references: [id])
+  userId   String?
 }
 
 model post {
