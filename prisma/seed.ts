@@ -33,15 +33,7 @@ async function main() {
       post: {
         create: {
           title: 'project sale',
-          grup: {
-            create: {
-              integrat: {
-                connect: {
-                  github_url: 'https://github.com/IsaacGSS'
-                }
-              }
-            }
-          }
+          description: 'e-commerce de projetos de programadores'
         }
       }
     }

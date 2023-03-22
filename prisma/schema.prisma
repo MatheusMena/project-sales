@@ -16,18 +16,9 @@ model user {
   postId     String?
   grupId     String?
   post       post?   @relation(fields: [postId], references: [id])
-  grup       grup[]  @relation
 
   @@index([postId])
   @@index([grupId])
-}
-
-model grup {
-  id       String  @id @default(uuid())
-  post     post?   @relation(fields: [postId], references: [id])
-  postId   String?
-  integrat user?   @relation(fields: [userId], references: [id])
-  userId   String?
 }
 
 model post {
@@ -36,7 +27,6 @@ model post {
   description String?
   url_img     String?
   post        Boolean  @default(false)
-  grup        grup[]
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   user        user[]
