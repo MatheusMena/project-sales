@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model user {
+  id         String  @id @unique @default(uuid())
+  name       String
+  nikeName   String?
+  github_url String  @unique
+  email      String  @unique
+  postId     String?
+  grupId     String?
+  post       post?   @relation(fields: [postId], references: [id])
+  grup       grup?   @relation(fields: [grupId], references: [id])
+
+  @@index([postId])
+  @@index([grupId])
+}
+
+model grup {
+  id       String  @id @default(uuid())
+  Integral user[]  @relation
+  post     post?   @relation(fields: [postId], references: [id])
+  postId   String?
+}
+
+model post {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  url_img     String?
+  post        Boolean  @default(false)
+  grup        grup[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  user        user[]
+}
