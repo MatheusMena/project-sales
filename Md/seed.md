@@ -70,4 +70,6 @@ async function main() {
     npm run seed
     ```
     
-    <a href='https://www.prisma.io/docs/guides/database/seed-database#how-to-seed-your-database-in-prisma'>Prisma/seed</a>
+    <a href='https://www.prisma.io/docs/guides/database/seed-database#how-to-seed-your-database-in-prisma'>Prisma -> seed</a>
+
+<a href='../prisma/seed.ts'>/seed.ts</a>
