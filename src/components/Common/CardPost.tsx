@@ -1,6 +1,7 @@
-import { IProjectPost } from '@/Types/IProjectPost'
 import Image from 'next/image'
 import { useState } from 'react'
+import { IProjectPost } from '../../Types/IProjectPost'
+
 export const CardPost = ({
   url_project,
   name_project,
