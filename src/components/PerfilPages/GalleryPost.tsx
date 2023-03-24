@@ -4,6 +4,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import { CardPost } from '../Common/CardPost'
+import React from 'react'
 
 export const GalleryPost = () => {
   const [isActiveProject, setIsActiveProject] = useState(true)
@@ -84,7 +85,7 @@ export const GalleryPost = () => {
             sapiente necessitatibus iste, animi labore omnis assumenda tempora
             soluta debitis maiores, ex asperiores accusamus suscipit vitae
             voluptatum ab consequuntur odit autem.'
-            url_project='https://s3-alpha-sig.figma.com/img/5f84/6572/0ed8b2500dcdbf4b479cc1745b1cd57b?Expires=1679270400&Signature=MBRpLBTc2rYFM2S8TRY6mwnusrmg76d-JiyYRPil3ioUwN5QY4Ef9nWTHMloVQ1ZsTPt5qFkEsGXy81lC1GuOEJx7Q-291JHsMXnCkvINDhPVJOQSEb4RUPcHNSj3QXmriDhqbTD56mnQRNeckBQz6a~rfCjsbmLCbsZXAQ3icg2XTXF~Rb9-wO~XIrMIVwezoB9CK1cuW0dukstLLxMgsD45Ml1dzb697lJ55Uan-pIEj~fP4mmCUp9MnQZqRdJm2IL-nJOOfqeiaH3OUxkFru8YWc3Wn8OewV0N41Lp-k6hHDnCVyJp7WIsD2sCkiC6dJ-CWDm6fyjLHgxinrRBw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+            url_project='https://th.bing.com/th/id/OIP.bskiDRZ7vFulYoQSkOTE9gHaE8?pid=ImgDet&rs=1'
             tags={Tags}
             grup={Grup}
           />
