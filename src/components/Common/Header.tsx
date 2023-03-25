@@ -96,6 +96,7 @@ export const Header = () => {
                 <div>
                   <span>Valor:</span>
                   <span>22.00</span>
+                </div>
                 <div>
                   <span>Quantidade:</span>
                   <span>22.00</span>1
