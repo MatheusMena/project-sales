@@ -15,7 +15,12 @@ async function main() {
           title: 'Pokedex',
           description:
             'A iPokeDex e a sua pokedex para relenbrar ade algum pokemon no estilo scroll Infinito',
-          url_img: ''
+          url_img: './img/#boracodar-Desafio11.png',
+          grups: {
+            create: {
+              Integral: {}
+            }
+          }
         }
       }
     }
