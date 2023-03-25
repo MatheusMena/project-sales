@@ -82,6 +82,28 @@ export const Header = () => {
           <div className='flex gap-2'>
             <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2' />
             <span className='hidden lg:block'>Bag</span>
+
+            <div className='w- fixed flex flex-col bg-white text-black p-2 top-0 left-36'>
+              <div className='w-full'>
+                <XMarkIcon className='w-8 text-black' />
+              </div>
+              <div>
+                <ul>
+                  <li>pedido</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <span>Valor:</span>
+                  <span>22.00</span>
+                <div>
+                  <span>Quantidade:</span>
+                  <span>22.00</span>1
+                </div>
+                <hr />
+                <button>Comprar</button>
+              </div>
+            </div>
           </div>
         </Link>
       </div>
