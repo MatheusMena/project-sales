@@ -83,23 +83,24 @@ export const Header = () => {
             <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2' />
             <span className='hidden lg:block'>Bag</span>
 
-            <div className='w- fixed flex flex-col bg-white text-black p-2 top-0 left-36'>
+            <div className='w-80 h-screen fixed flex flex-col bg-white text-black p-2 top-0 right-0'>
               <div className='w-full'>
                 <XMarkIcon className='w-8 text-black' />
               </div>
-              <div>
-                <ul>
-                  <li>pedido</li>
-                </ul>
-              </div>
-              <div>
-                <div>
+
+              <ul className=' h-full p-2 pt-5 overflow-y-scroll text-left'>
+                <li>pedido</li>
+              </ul>
+
+              <div className='flex flex-col gap-1 p-1 my-1'>
+                <hr />
+                <div className='flex justify-around'>
                   <span>Valor:</span>
                   <span>22.00</span>
                 </div>
-                <div>
+                <div className='flex justify-around'>
                   <span>Quantidade:</span>
-                  <span>22.00</span>1
+                  <span>1</span>
                 </div>
                 <hr />
                 <button>Comprar</button>
