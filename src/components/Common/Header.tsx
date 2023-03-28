@@ -1,20 +1,20 @@
 import {
   UserIcon,
-  ShoppingCartIcon,
   Bars3Icon,
   MagnifyingGlassIcon,
   XMarkIcon
 } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { Bag } from '../HomePages/Bag'
 
 export const Header = () => {
-  const [isActive, setIsActive] = useState(true)
-  const onclick = () => setIsActive(!isActive)
+  const [isActiveNav, setIsActiveNav] = useState(true)
+  const onclickNav = () => setIsActiveNav(!isActiveNav)
 
   return (
     <header
-      aria-checked={isActive}
+      aria-checked={isActiveNav}
       className='
       max-md:aria-checked:-left-64 max-md:aria-checked:bg-transparent 
 
@@ -25,9 +25,9 @@ export const Header = () => {
       <div className='flex  justify-end' id='logo'>
         <span
           className='absolute z-10 cursor-pointer md:hidden'
-          onClick={onclick}
+          onClick={onclickNav}
         >
-          {isActive ? (
+          {isActiveNav ? (
             <Bars3Icon className='w-6 text-black bg-zinc-100 rounded-sm' />
           ) : (
             <XMarkIcon className='w-8' />
@@ -75,38 +75,11 @@ export const Header = () => {
           </div>
         </Link>
         <Link
-          aria-checked={isActive}
+          aria-checked={isActiveNav}
           className='max-md:aria-checked:block hidden md:block'
           href={'/'}
         >
-          <div className='flex gap-2'>
-            <ShoppingCartIcon className='w-6 fixed md:static flex gap-2 top-2 right-2' />
-            <span className='hidden lg:block'>Bag</span>
-
-            <div className='w-80 h-screen fixed flex flex-col bg-white text-black p-2 top-0 right-0'>
-              <div className='w-full'>
-                <XMarkIcon className='w-8 text-black' />
-              </div>
-
-              <ul className=' h-full p-2 pt-5 overflow-y-scroll text-left'>
-                <li>pedido</li>
-              </ul>
-
-              <div className='flex flex-col gap-1 p-1 my-1'>
-                <hr />
-                <div className='flex justify-around'>
-                  <span>Valor:</span>
-                  <span>22.00</span>
-                </div>
-                <div className='flex justify-around'>
-                  <span>Quantidade:</span>
-                  <span>1</span>
-                </div>
-                <hr />
-                <button>Comprar</button>
-              </div>
-            </div>
-          </div>
+          <Bag />
         </Link>
       </div>
     </header>
